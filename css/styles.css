@@ -1,0 +1,61 @@
+.wrapper {
+  width: 690px;
+  margin:100px auto;
+  border:1px solid black;
+}
+
+.cardwrap { 
+  display: inline-block;
+  margin: 10px 9px;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  -webkit-perspective: 800;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.37,1.44,.01,1.05);
+  
+}
+
+  .card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    border:5px solid #f3f3f3;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0,0,0,.15);
+  }
+
+  .card .front {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALklEQVQYV2NkIAIwEqGGgTxFH4/w/+e3+YiiGYUDU4CuEMM6gibh8gR5DsdmGgBclBAKnNVT1AAAAABJRU5ErkJggg==) repeat, HSL(6, 63%, 50%);
+  }
+
+  .card .back {
+    -webkit-transform: rotateY(180deg);
+  }
+
+  .card:hover {
+    -webkit-transform: rotateY(180deg);
+  }
+
+  .card .blue {
+    background: HSL(204, 70%, 53%);
+  }
+
+  .card .green {
+    background:HSL(145, 63%, 42%);
+  }
+
+  .card .yellow {
+    background:HSL(48, 89%, 50%);
+  }
+
+  .card .orange {
+    background:HSL(28, 80%, 52%);
+  }
