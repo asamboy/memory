@@ -1,7 +1,7 @@
 .wrapper {
   width: 690px;
   margin:100px auto;
-  border:1px solid black;
+  /*border:1px solid black;*/
 }
 
 .cardwrap { 
@@ -18,8 +18,8 @@
   height: 100%;
   position: absolute;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s cubic-bezier(.37,1.44,.01,1.05);
-  
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.37,1.44,.01,1.05),box-shadow;
+  cursor: pointer;
 }
 
   .card div {
@@ -40,8 +40,12 @@
     -webkit-transform: rotateY(180deg);
   }
 
-  .card:hover {
+  .card.flipped, .card.match {
     -webkit-transform: rotateY(180deg);
+  }
+
+  .card.match {
+    box-shadow: 0 0 0 1px HSL(48, 89%, 50%);
   }
 
   .card .blue {
