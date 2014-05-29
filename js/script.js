@@ -7,19 +7,20 @@ function randomize() {
 randomize();
 
 $("body").on("click", ".card", function(){
-	if ($(this).attr("class") != "card flipped" && $(this).attr("class") != "card flipped match") {
+	var card = $(this);
+	if ($(card).attr("class") != "card flipped" && $(card).attr("class") != "card flipped match") {
 		
 
 		if ($(".flipped").get().length==2) {
 			$(".flipped").removeClass("flipped");
 		}
 
-		if ( $(this).children(".back").attr("class") == $(".flipped").children(".back").attr("class") ) {
-			$(this).addClass("flipped");
+		if ( $(card).children(".back").attr("class") == $(".flipped").children(".back").attr("class") ) {
+			$(card).addClass("flipped");
 			$(".flipped").addClass("match");
 		}
 
-		$(this).addClass("flipped");
+		$(card).addClass("flipped");
 
 		if ($(".match").get().length == 8) {
 			$("#modal").foundation("reveal", "open");
