@@ -55,8 +55,8 @@ body {
 }
 
 [class*='block-grid-'] > li {
-    width: 8.2rem;
-    height: 10rem;
+    width: 8rem;
+    height: 10.1rem;
 }
 
 .cardwrap {
