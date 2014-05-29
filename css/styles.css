@@ -2,6 +2,10 @@ body {
     background: url(../img/noise.png);
 }
 
+.row{
+  max-width: 100%;
+}
+
 .row::after {
     position: relative;
     top: -23px;
