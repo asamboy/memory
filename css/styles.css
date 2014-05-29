@@ -28,7 +28,7 @@ body {
 }
 
 .reveal-modal {
-    border: 1px solid #874a0f;
+    border: 1px solid #874a0,f;
     background: #9c6e41;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .wrapper {
-    max-width: 620px;
+    max-width: 605px;
     margin: auto;
   /*border:1px solid black;*/
 }
