@@ -1,49 +1,55 @@
 body {
-  background:url(../img/noise.png);
+    background: url(../img/noise.png);
 }
 
 .row::after {
-  content:" ";
-  display: block;
-  width: 100%;
-  height: 1px;
-  position: relative;
-  top:-23px;
-  background: #E8A361;
+    position: relative;
+    top: -23px;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: ' ';
+
+    background: #e8a361;
 }
 
 .panel {
-  border:none;
-  border-bottom:2px solid #874A0F;
-  background:#9C6E41;
+    border: none;
+    border-bottom: 2px solid #874a0f;
+    background: #9c6e41;
 }
 
-  .panel h1 {
-    color:hsl(29,70%,92%);
-    text-shadow: 0 2px 0 #874A0F;
-  }
+.panel h1 {
+    color: hsl(29,70%,92%);
+    text-shadow: 0 2px 0 #874a0f;
+}
 
 .reveal-modal {
-  background:#9C6E41;
-  border:1px solid #874A0F;
+    border: 1px solid #874a0f;
+    background: #9c6e41;
 }
 
-  .reveal-modal h2,
+.reveal-modal h2,
   .reveal-modal .close-reveal-modal {
-    color:hsl(29,70%,92%);
-    text-shadow: 0 2px 0 #874A0F;
-  }
+    color: hsl(29,70%,92%);
+    text-shadow: 0 2px 0 #874a0f;
+}
 
 .button.small {
-  margin:10px auto 5px;
-  color:hsl(133,53%,95%);
-  background:url(../img/noise.png);
-  font-size: 1.1rem;
-  text-shadow: 0 1px 0 #0C6620;
+    font-size: 1.1rem;
+
+    margin: 10px auto 5px;
+
+    color: hsl(133,53%,95%);
+    background: url(../img/noise.png);
+    text-shadow: 0 1px 0 #0c6620;
 }
 
 .wrapper {
-  max-width: 620px;
+    max-width: 620px;
     margin: auto;
   /*border:1px solid black;*/
 }
