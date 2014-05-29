@@ -1,6 +1,50 @@
+body {
+  background:url(../img/noise.png);
+}
+
+.row::after {
+  content:" ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: relative;
+  top:-23px;
+  background: #E8A361;
+}
+
+.panel {
+  border:none;
+  border-bottom:2px solid #874A0F;
+  background:#9C6E41;
+}
+
+  .panel h1 {
+    color:hsl(29,70%,92%);
+    text-shadow: 0 2px 0 #874A0F;
+  }
+
+.reveal-modal {
+  background:#9C6E41;
+  border:1px solid #874A0F;
+}
+
+  .reveal-modal h2,
+  .reveal-modal .close-reveal-modal {
+    color:hsl(29,70%,92%);
+    text-shadow: 0 2px 0 #874A0F;
+  }
+
+.button.small {
+  margin:10px auto 5px;
+  color:hsl(133,53%,95%);
+  background:url(../img/noise.png);
+  font-size: 1.1rem;
+  text-shadow: 0 1px 0 #0C6620;
+}
+
 .wrapper {
-  /*max-width: 690px;*/
-    margin: 20px auto;
+  max-width: 620px;
+    margin: auto;
   /*border:1px solid black;*/
 }
 
@@ -8,6 +52,7 @@
     width: 8.2rem;
     height: 10rem;
 }
+
 .cardwrap {
     position: relative;
 
