@@ -1,95 +1,69 @@
 .wrapper {
-    margin: 20px auto;
+  /*max-width: 690px;*/
+  margin:20px auto;
+  /*border:1px solid black;*/
 }
 
-[class*='block-grid-'] > li {
-    width: 8.2rem;
-    height: 10rem;
+[class*="block-grid-"] > li {
+  width: 8.2rem;
+  height: 10rem;
 }
-
-.cardwrap {
-    position: relative;
-
-    width: 150px;
-    height: 200px;
-    margin: 10px 9px;
-
-    -webkit-perspective: 800;
+.cardwrap { 
+  margin: 10px 9px;
+  width: 150px;
+  height: 200px;
+  position: relative;
+  -webkit-perspective: 800;
 }
 
 .card {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    cursor: pointer;
-    -webkit-transition: -webkit-transform 1s cubic-bezier(.37, 1.44, .01, 1.05);
-       -moz-transition:    -moz-transform 1s cubic-bezier(.37, 1.44, .01, 1.05);
-         -o-transition:      -o-transform 1s cubic-bezier(.37, 1.44, .01, 1.05);
-            transition:         transform 1s cubic-bezier(.37, 1.44, .01, 1.05);
-
-    -webkit-transform-style: preserve-3d;
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(.37,1.44,.01,1.05);
+  cursor: pointer;
 }
 
-.card > div {
+  .card div {
     position: absolute;
-
     width: 100%;
-    height: 100%;
-
-    border: 5px solid #f3f3f3;
-    -webkit-border-radius: 2px;
-       -moz-border-radius: 2px;
-            border-radius: 2px;
-    -webkit-box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0, 0, 0, .15);
-       -moz-box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0, 0, 0, .15);
-            box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0, 0, 0, .15);
-
+    height: 100%; 
     -webkit-backface-visibility: hidden;
-}
+    border:5px solid #f3f3f3;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0,0,0,.15);
+  }
 
-.card .front {
-    background: image/png;
-}
+  .card .front {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAALklEQVQYV2NkIAIwEqGGgTxFH4/w/+e3+YiiGYUDU4CuEMM6gibh8gR5DsdmGgBclBAKnNVT1AAAAABJRU5ErkJggg==) repeat, HSL(6, 63%, 50%);
+  }
 
-.card .back {
-    -webkit-transform: rotatey(180deg);
-       -moz-transform: rotatey(180deg);
-        -ms-transform: rotatey(180deg);
-         -o-transform: rotatey(180deg);
-            transform: rotatey(180deg);
-}
+  .card .back {
+    -webkit-transform: rotateY(180deg);
+  }
 
-.card.flipped, .card.match {
+  .card.flipped, .card.match {
+    -webkit-transform: rotateY(180deg);
     cursor: default;
-    -webkit-transform: rotatey(180deg);
-       -moz-transform: rotatey(180deg);
-        -ms-transform: rotatey(180deg);
-         -o-transform: rotatey(180deg);
-            transform: rotatey(180deg);
-}
+  }
 
-.card div div {
-    width: 80px;
-    height: 80px;
-    margin: 30% auto;
+  /*.card .match div {
+    border: 5px solid HSL(48, 89%, 50%);
+  }*/
 
-    border: 10px solid #f3f3f3;
-}
+  .card .blue {
+    background: HSL(204, 70%, 53%);
+  }
 
-.circle {
-    -webkit-border-radius: 50px;
-       -moz-border-radius: 50px;
-            border-radius: 50px;
-}
+  .card .green {
+    background:HSL(145, 63%, 42%);
+  }
 
-.square {
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-}
+  .card .yellow {
+    background:HSL(48, 89%, 50%);
+  }
 
-.fill {
-    background: #f3f3f3;
-}
+  .card .orange {
+    background:HSL(28, 80%, 52%);
+  }
