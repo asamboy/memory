@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$(".wrapper").append(cards);
 
 	$(".card").click(function(){
-		if ($(this).attr('class') != "flipped" && $(this).attr('class') != "match") {
+		if ($(this).attr('class') != "card flipped" && $(this).attr('class') != "card flipped match") {
 			
 
 			if ($(".flipped").get().length==2) {
