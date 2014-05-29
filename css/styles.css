@@ -16,6 +16,8 @@
     margin: 10px 9px;
 
     -webkit-perspective: 800;
+       -moz-perspective: 800;
+            perspective: 800;
 }
 
 .card {
@@ -26,8 +28,12 @@
 
     cursor: pointer;
     -webkit-transition: -webkit-transform 1s cubic-bezier(.37,1.44,.01,1.05);
+       -moz-transition:    -moz-transform 1s cubic-bezier(.37,1.44,.01,1.05);
+            transition:         transform 1s cubic-bezier(.37,1.44,.01,1.05);
 
     -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .card > div {
@@ -41,6 +47,8 @@
     box-shadow: 0 0 0 1px #aaa, 0 0 2px 2px rgba(0,0,0,.15);
 
     -webkit-backface-visibility: hidden;
+    -mox-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .card .front {
@@ -49,16 +57,16 @@
 
 .card .back {
     -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .card.flipped, .card.match {
     cursor: default;
     -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
-
-  /*.card .match div {
-    border: 5px solid HSL(48, 89%, 50%);
-  }*/
 
 .card .blue {
     background: HSL(204, 70%, 53%);
@@ -84,7 +92,8 @@
     width: 80px;
     height: 80px;
     margin: 29% auto;
-    border:10px solid #f3f3f3;
+
+    border: 10px solid #f3f3f3;
 }
 
 .circle {
