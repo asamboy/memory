@@ -55,7 +55,6 @@ body {
 .wrapper {
     max-width: 605px;
     margin: auto;
-  /*border:1px solid black;*/
 }
 
 [class*='block-grid-'] > li {
@@ -137,10 +136,6 @@ body {
 
 .card .orange {
     background: HSL(28, 80%, 52%);
-}
-
-.card .yellow {
-    background: HSL(48, 89%, 50%);
 }
 
 .card div div {
